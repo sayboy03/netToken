@@ -1,7 +1,7 @@
 pragma solidity ^0.4.16;
 
 //import "browser/con.sol";
-import "browser/storage.sol";
+//import "browser/storage.sol";
 
 //interface netTokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; }
 
