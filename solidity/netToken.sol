@@ -6,7 +6,7 @@ pragma solidity ^0.4.16;
 //interface netTokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; }
 
 
-contract NetmaniaToken is SimpleStorage{
+contract NetmaniaToken {
 
     // Public variables of the token
     string public name;
