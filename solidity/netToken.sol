@@ -6,7 +6,10 @@ import "browser/storage.sol";
 contract NetmaniaToken is SimpleStorage{
 
     // Public variables of the token
-
+    string public name;
+    string public symbol;
+    uint8 decimals = 0;
+    uint256 public totalSupply;
 
 
     // This creates an array with all balances
