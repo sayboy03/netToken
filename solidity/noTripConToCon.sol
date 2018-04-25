@@ -3,6 +3,8 @@ pragma solidity ^0.4.16;
 
 contract Factory {
     address[] public newContracts;
+    //address public lastContract;
+    //uint256 public contractCount;
     
     function createContract () {
         address newContract = new Contract();
@@ -11,6 +13,11 @@ contract Factory {
     
     function getAddr() public constant returns (address[]) {
         return newContracts;
+    }
+    
+    function getLastAddr() public constant returns (uint256) {
+           uint256 contractCount = newContracts.length;
+        return contractCount;
     }
     
 }
