@@ -7,7 +7,11 @@ contract Factory {
     function createContract () {
         address newContract = new Contract();
         newContracts.push(newContract);
-    } 
+    }
+    
+    function getAddr() public constant returns (address[]) {
+        return newContracts;
+    }
     
 }
 
